@@ -58,9 +58,10 @@ public class UserService {
         } else {
           userDao.addUser(name);
         }
+
+        System.out.println("after add user count : " + userDao.getUserCount());
       }
 
-      System.out.println("after add user count : " + userDao.getUserCount());
 
       return null;
     });
